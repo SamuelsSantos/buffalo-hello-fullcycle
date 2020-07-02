@@ -50,7 +50,7 @@ func App() *buffalo.App {
 		// Set the request content type to JSON
 		app.Use(contenttype.Set("application/json"))
 
-		app.GET("/", HomeHandler)
+		app.GET("/hello", HomeHandler)
 	}
 
 	return app
